@@ -9,8 +9,8 @@ E_int = pulp.LpVariable('Electricistas_Internos', lowBound=0, upBound=30, cat='I
 M_int = pulp.LpVariable('Mecanicos_Internos', lowBound=0, upBound=20, cat='Integer')
 
 # Variables de trabajadores contratados externamente
-E_ext = pulp.LpVariable('Electricistas_Externos', lowBound=0, upBound=5, cat='Integer')
-M_ext = pulp.LpVariable('Mecanicos_Externos', lowBound=0, upBound=5, cat='Integer')
+E_ext = pulp.LpVariable('Electricistas_Externos', lowBound=0, upBound=10, cat='Integer')
+M_ext = pulp.LpVariable('Mecanicos_Externos', lowBound=0, upBound=10, cat='Integer')
 
 # Totales
 E = E_int + E_ext

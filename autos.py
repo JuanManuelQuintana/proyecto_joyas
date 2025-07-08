@@ -9,11 +9,11 @@ E = pulp.LpVariable('Electricistas', lowBound=0, upBound=30, cat='Integer')
 M = pulp.LpVariable('Mecanicos', lowBound=0, upBound=20, cat='Integer')
 
 # Función objetivo: maximizar beneficios
-problema += 150 * E + 120 * M, "Beneficio_total"
+problema += 150 * E + 120 * M, "Beneficio total"
 
 # Restricciones
-problema += M >= E, "Mecanicos_mayor_o_igual_que_electricistas"
-problema += M <= 2 * E, "Mecanicos_no_mas_del_doble"
+problema += M >= E, "Mecanicos mayor o igual que electricistas"
+problema += M <= 2 * E, "Mecanicos no mas del doble"
 
 # Mostrar el modelo
 print("Modelo de optimización:")
